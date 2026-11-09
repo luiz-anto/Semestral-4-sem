@@ -20,7 +20,7 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
   }
   return (
     <form onSubmit={submit} className="space-y-5">
-      <label className="field">
+      <label className="flex flex-col gap-2 text-xs text-[#BBCCEF] [&_input]:w-full [&_input]:min-h-12 [&_input]:rounded-xl [&_input]:border [&_input]:border-[#3B6283] [&_input]:bg-[#3B6283]/25 [&_input]:px-4 [&_input]:py-3 [&_input]:text-sm [&_input]:text-[#E4EAF0] [&_input]:outline-none [&_input]:placeholder:text-[#BBCCEF]/40 [&_input:focus]:border-[#E88211] [&_select]:min-h-12 [&_select]:rounded-xl [&_select]:border [&_select]:border-[#3B6283] [&_select]:bg-[#122849] [&_select]:px-4 [&_select]:text-[#E4EAF0]">
         Nome do dispositivo
         <input
           name="name"
@@ -32,7 +32,7 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
         />
       </label>
       {!device && (
-        <label className="field">
+        <label className="flex flex-col gap-2 text-xs text-[#BBCCEF] [&_input]:w-full [&_input]:min-h-12 [&_input]:rounded-xl [&_input]:border [&_input]:border-[#3B6283] [&_input]:bg-[#3B6283]/25 [&_input]:px-4 [&_input]:py-3 [&_input]:text-sm [&_input]:text-[#E4EAF0] [&_input]:outline-none [&_input]:placeholder:text-[#BBCCEF]/40 [&_input:focus]:border-[#E88211] [&_select]:min-h-12 [&_select]:rounded-xl [&_select]:border [&_select]:border-[#3B6283] [&_select]:bg-[#122849] [&_select]:px-4 [&_select]:text-[#E4EAF0]">
           Tipo
           <select name="type" defaultValue="LIGHT">
             <option value="LIGHT">Lâmpada</option>
@@ -41,7 +41,7 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
           </select>
         </label>
       )}
-      <label className="field">
+      <label className="flex flex-col gap-2 text-xs text-[#BBCCEF] [&_input]:w-full [&_input]:min-h-12 [&_input]:rounded-xl [&_input]:border [&_input]:border-[#3B6283] [&_input]:bg-[#3B6283]/25 [&_input]:px-4 [&_input]:py-3 [&_input]:text-sm [&_input]:text-[#E4EAF0] [&_input]:outline-none [&_input]:placeholder:text-[#BBCCEF]/40 [&_input:focus]:border-[#E88211] [&_select]:min-h-12 [&_select]:rounded-xl [&_select]:border [&_select]:border-[#3B6283] [&_select]:bg-[#122849] [&_select]:px-4 [&_select]:text-[#E4EAF0]">
         Cômodo
         <input
           name="room"
@@ -57,12 +57,15 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
         </datalist>
       </label>
       {error && (
-        <p role="alert" className="form-error">
+        <p
+          role="alert"
+          className="rounded-xl border border-[#E88211]/50 bg-[#E88211]/10 p-3 text-xs leading-relaxed text-[#E4EAF0]"
+        >
           {error}
         </p>
       )}
       <button
-        className="button button-dark w-full justify-center"
+        className="inline-flex min-h-12 items-center gap-2 rounded-xl border px-5 py-3 text-sm transition disabled:cursor-not-allowed disabled:opacity-45 focus-visible:outline-2 focus-visible:outline-[#E88211] focus-visible:outline-offset-4 bg-[#E88211] text-[#09193B] hover:bg-[#E88211]/85 w-full justify-center"
         disabled={busy}
       >
         {busy
@@ -77,7 +80,7 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
           type="button"
           disabled={busy}
           onClick={onDelete}
-          className="button button-quiet w-full justify-center"
+          className="inline-flex min-h-12 items-center gap-2 rounded-xl border px-5 py-3 text-sm transition disabled:cursor-not-allowed disabled:opacity-45 focus-visible:outline-2 focus-visible:outline-[#E88211] focus-visible:outline-offset-4 text-[#BBCCEF]/70 hover:text-[#E88211] w-full justify-center"
         >
           <Icon name="trash" size={17} />
           Excluir dispositivo

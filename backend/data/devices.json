@@ -4,7 +4,7 @@
       "id": "10df7473-f74c-4011-a771-f579f5edc7d9",
       "ownerId": "54e28686-3cab-45cf-8467-0da655dc7567",
       "state": {
-        "isOn": true,
+        "isOn": false,
         "temperature": 22
       }
     },
@@ -12,9 +12,17 @@
       "id": "054509ae-4676-475e-89e6-438ffdd6b648",
       "ownerId": "54e28686-3cab-45cf-8467-0da655dc7567",
       "state": {
-        "isOn": true,
+        "isOn": false,
         "channel": 5,
-        "volume": 77
+        "volume": 87
+      }
+    },
+    {
+      "id": "1a53c3ed-a721-484c-9124-f4995a96e271",
+      "ownerId": "54e28686-3cab-45cf-8467-0da655dc7567",
+      "state": {
+        "isOn": true,
+        "brightness": 95
       }
     }
   ]
