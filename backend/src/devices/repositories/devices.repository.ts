@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../../database/prisma/prisma.service.js';
 import type { CreateDeviceDto, UpdateDeviceDto } from '../dto/device.dto.js';
+import { initialState } from '../interfaces/device-state.js';
 @Injectable()
 export class DevicesRepository {
   constructor(private readonly prisma: PrismaService) {}
   create(ownerId: string, dto: CreateDeviceDto) {
-    return this.prisma.device.create({ data: { name: dto.name, type: dto.type, room: dto.room, ownerId } });
+    return this.prisma.device.create({ data: { name: dto.name, type: dto.type, room: dto.room, ownerId, ...initialState(dto.type) } });
   }
   list(ownerId: string) {
     return this.prisma.device.findMany({

@@ -1,4 +1,3 @@
-import { StateRepository } from '../../devices/repositories/state.repository.js';
 import {
   Injectable,
   ConflictException,
@@ -14,7 +13,6 @@ import { UpdateUserDto } from '../dto/update-user.dto.js';
 export class UsersService {
   constructor(
     private readonly usersRepository: UsersRepository,
-    private readonly states: StateRepository,
   ) {}
 
   // Cadastrar usuário
@@ -110,7 +108,6 @@ export class UsersService {
     }
 
     await this.usersRepository.delete(id);
-    await this.states.removeOwner(id);
 
     return {
       message: 'Usuário excluído com sucesso.',

@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common';
 import { DevicesRepository } from '../repositories/devices.repository.js';
 import { StateRepository } from '../repositories/state.repository.js';
-import { initialState, validateState } from '../interfaces/device-state.js';
+import { validateState } from '../interfaces/device-state.js';
 import type {
   CreateDeviceDto,
   UpdateDeviceDto,
@@ -22,17 +22,16 @@ export class DevicesService {
     if (!device) throw new NotFoundException('Dispositivo não encontrado.');
     return device;
   }
-  private async withState(
-    device: Awaited<ReturnType<DevicesRepository['create']>>,
-  ) {
-    return {
-      ...device,
-      state: await this.states.get(
-        device.id,
-        device.ownerId,
-        initialState(device.type),
-      ),
-    };
+  private withState(device: Awaited<ReturnType<DevicesRepository['create']>>) {
+    const {
+      isOn: _isOn,
+      brightness: _brightness,
+      temperature: _temperature,
+      channel: _channel,
+      volume: _volume,
+      ...base
+    } = device;
+    return { ...base, state: this.states.toState(device) };
   }
   async create(ownerId: string, dto: CreateDeviceDto) {
     if (!dto.name.trim()) throw new BadRequestException('Nome obrigatório.');
@@ -41,23 +40,10 @@ export class DevicesService {
       room: dto.room,
       name: dto.name.trim(),
     });
-    try {
-      await this.states.patch(
-        device.id,
-        ownerId,
-        initialState(device.type),
-        {},
-      );
-    } catch (error) {
-      await this.devices.remove(device.id, ownerId);
-      throw error;
-    }
     return this.withState(device);
   }
   async list(ownerId: string) {
-    return Promise.all(
-      (await this.devices.list(ownerId)).map((d) => this.withState(d)),
-    );
+    return (await this.devices.list(ownerId)).map((d) => this.withState(d));
   }
   async find(id: string, ownerId: string) {
     return this.withState(await this.owned(id, ownerId));
@@ -71,17 +57,15 @@ export class DevicesService {
   async remove(id: string, ownerId: string) {
     await this.owned(id, ownerId);
     await this.devices.remove(id, ownerId);
-    await this.states.remove(id, ownerId);
     return { message: 'Dispositivo excluído.' };
   }
   async state(id: string, ownerId: string, patch: unknown) {
     const device = await this.owned(id, ownerId);
     return {
-      ...device,
+      ...this.withState(device),
       state: await this.states.patch(
         id,
         ownerId,
-        initialState(device.type),
         validateState(device.type, patch),
       ),
     };
