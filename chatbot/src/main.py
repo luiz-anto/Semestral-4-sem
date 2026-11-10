@@ -77,19 +77,16 @@ def chat(corpo: Mensagem, authorization: str = Header()):
             return resposta("Qual intensidade? Entre 0 e 100%.")
         estado = {"brightness": numeros[0]}
 
-    # Dispositivos do tipo (e do cômodo, se foi dito)
+    # Primeiro dispositivo do tipo (e do cômodo, se foi dito)
     headers = {"Authorization": authorization}
     todos = httpx.get(f"{BACKEND_URL}/devices", headers=headers).json()
-    alvos = []
+    alvo = None
     for d in todos:
         if d["type"] == TIPOS[dispositivo] and (comodo is None or d.get("room") == comodo):
-            alvos.append(d)
-    if not alvos:
+            alvo = d
+            break
+    if alvo is None:
         return resposta("Não encontrei esse dispositivo.")
 
-    atualizados = []
-    for d in alvos:
-        atualizados.append(httpx.patch(f"{BACKEND_URL}/devices/{d['id']}/state", json=estado, headers=headers).json())
-
-    nomes = ", ".join(d["name"] for d in atualizados)
-    return resposta(f"Pronto: {nomes}.", atualizados)
+    atualizado = httpx.patch(f"{BACKEND_URL}/devices/{alvo['id']}/state", json=estado, headers=headers).json()
+    return resposta(f"Pronto: {atualizado['name']}.", [atualizado])
