@@ -7,13 +7,13 @@ import {
   MaxLength,
 } from 'class-validator';
 export const DEVICE_TYPES = ['LIGHT', 'AIR_CONDITIONER', 'TV'] as const;
+export const ROOMS = ['Sala', 'Escritório', 'Quarto'] as const;
 export type DeviceKind = (typeof DEVICE_TYPES)[number];
 export class CreateDeviceDto {
   @IsString() @IsNotEmpty() @MaxLength(100) name: string;
   @IsIn(DEVICE_TYPES) type: DeviceKind;
   @ValidateIf((_object, value) => value !== undefined)
-  @IsString()
-  @MaxLength(100)
+  @IsIn(ROOMS)
   room?: string;
 }
 export class UpdateDeviceDto {
@@ -23,8 +23,7 @@ export class UpdateDeviceDto {
   @MaxLength(100)
   name?: string;
   @ValidateIf((_object, value) => value !== undefined)
-  @IsString()
-  @MaxLength(100)
+  @IsIn(ROOMS)
   room?: string;
 }
 export class DeviceActionDto {

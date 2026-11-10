@@ -813,7 +813,6 @@ export default function App() {
           {modal.type === "device" ? (
             <DeviceForm
               device={modal.device}
-              rooms={rooms.filter((r) => r !== "Sem cômodo")}
               onSave={saveDevice}
               onDelete={() =>
                 setModal({

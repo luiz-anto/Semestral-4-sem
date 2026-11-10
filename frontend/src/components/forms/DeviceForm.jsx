@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Icon from "../ui/Icon";
-export default function DeviceForm({ device, rooms, onSave, onDelete }) {
+const ROOMS = ["Sala", "Escritório", "Quarto"];
+export default function DeviceForm({ device, onSave, onDelete }) {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   async function submit(event) {
@@ -43,18 +44,13 @@ export default function DeviceForm({ device, rooms, onSave, onDelete }) {
       )}
       <label className="flex flex-col gap-2 text-xs text-[#BBCCEF] [&_input]:w-full [&_input]:min-h-12 [&_input]:rounded-xl [&_input]:border [&_input]:border-[#3B6283] [&_input]:bg-[#3B6283]/25 [&_input]:px-4 [&_input]:py-3 [&_input]:text-sm [&_input]:text-[#E4EAF0] [&_input]:outline-none [&_input]:placeholder:text-[#BBCCEF]/40 [&_input:focus]:border-[#E88211] [&_select]:min-h-12 [&_select]:rounded-xl [&_select]:border [&_select]:border-[#3B6283] [&_select]:bg-[#122849] [&_select]:px-4 [&_select]:text-[#E4EAF0]">
         Cômodo
-        <input
-          name="room"
-          defaultValue={device?.room || ""}
-          list="room-options"
-          maxLength={100}
-          placeholder="Ex.: Sala"
-        />
-        <datalist id="room-options">
-          {rooms.map((room) => (
-            <option key={room} value={room} />
+        <select name="room" defaultValue={device?.room || ROOMS[0]} required>
+          {ROOMS.map((room) => (
+            <option key={room} value={room}>
+              {room}
+            </option>
           ))}
-        </datalist>
+        </select>
       </label>
       {error && (
         <p
