@@ -1,0 +1,67 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: smart_home
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d smart_home"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      target: backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/smart_home?schema=public
+      JWT_SECRET: chave-de-desenvolvimento-local-smart-home-2026-troque-em-producao
+      PORT: 3000
+      FRONTEND_URL: http://localhost:5173
+      DEVICE_STATE_PATH: data/devices.json
+    ports:
+      - "3000:3000"
+    volumes:
+      - devicedata:/app/data
+
+  chatbot:
+    build:
+      context: .
+      target: chatbot
+    restart: unless-stopped
+    depends_on:
+      - backend
+    environment:
+      BACKEND_URL: http://backend:3000
+      FRONTEND_URL: http://localhost:5173
+    ports:
+      - "8001:8000"
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+      args:
+        VITE_API_URL: http://localhost:3000
+        VITE_CHATBOT_URL: http://localhost:8001
+    restart: unless-stopped
+    depends_on:
+      - backend
+      - chatbot
+    ports:
+      - "5173:80"
+
+volumes:
+  pgdata:
+  devicedata:
