@@ -737,7 +737,18 @@ export default function App() {
               </div>
             </>
           )}
-          {page === "chat" && <Chat />}
+          {page === "chat" && (
+            <Chat
+              token={session?.token}
+              demo={demo}
+              onError={handleError}
+              onDevicesChanged={(changed) =>
+                updateDevices((items) =>
+                  items.map((d) => changed.find((c) => c.id === d.id) ?? d),
+                )
+              }
+            />
+          )}
           {page === "profile" && (
             <Profile
               user={user}
