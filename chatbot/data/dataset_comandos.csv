@@ -1,0 +1,363 @@
+comando,intencao
+pode ligar a tv,tv_ligar
+"por favor, acenda a luz da sala",luz_ligar
+acenda a luz do escritório,luz_ligar
+quero o ar do escritório a 26 graus,ar_condicionado_temperatura
+desligue a lâmpada da sala,luz_desligar
+desligue a tv do escritório,tv_desligar
+coloca a luz da sala em 25%,luz_intensidade
+brilho da lâmpada em 50,luz_intensidade
+coloca o ar do escritório em 17 graus,ar_condicionado_temperatura
+brilho da lâmpada do escritório em 100,luz_intensidade
+desative o ar condicionado do escritório,ar_condicionado_desligar
+desliga a luz do escritório,luz_desligar
+desliga o ar da sala,ar_condicionado_desligar
+desliga a lâmpada do escritório,luz_desligar
+põe a luz em 75 por cento,luz_intensidade
+chega de tv,tv_desligar
+desative o ar condicionado,ar_condicionado_desligar
+preciso de ar da sala,ar_condicionado_ligar
+muda o ar da sala para 17,ar_condicionado_temperatura
+diminui a luz para 25%,luz_intensidade
+acende a luz da sala,luz_ligar
+pode desligar a tv da sala,tv_desligar
+coloca a luz em 10%,luz_intensidade
+deixa o ar da sala em 24°C,ar_condicionado_temperatura
+aumenta a temperatura do ar do quarto,ar_condicionado_temperatura
+pode desligar a tv do escritório,tv_desligar
+ligue o ar condicionado do escritório,ar_condicionado_ligar
+quero ver tv da sala,tv_ligar
+liga a tv da sala,tv_ligar
+tranque a porta,desconhecido
+quero a luz da sala acesa,luz_ligar
+diminui a luz do escritório para 25%,luz_intensidade
+desligue a luz do quarto,luz_desligar
+me conte uma piada,desconhecido
+ligue a tv do quarto,tv_ligar
+aumenta a luz do quarto para 25%,luz_intensidade
+quero a luz do escritório apagada,luz_desligar
+ligue a lâmpada do quarto,luz_ligar
+temperatura do ar do quarto para 29,ar_condicionado_temperatura
+ative a tv do quarto,tv_ligar
+desliga o ar condicionado da sala,ar_condicionado_desligar
+obrigado,desconhecido
+pode ligar a luz do quarto,luz_ligar
+temperatura do ar para 27,ar_condicionado_temperatura
+aumenta a luz para 10%,luz_intensidade
+tchau,desconhecido
+ajusta o brilho da luz do escritório para 10,luz_intensidade
+desligue a lâmpada,luz_desligar
+ligue a luz da sala,luz_ligar
+apaga a luz da sala,luz_desligar
+desliga o ar do quarto,ar_condicionado_desligar
+liga a televisão do escritório,tv_ligar
+ajusta o ar do escritório para 26,ar_condicionado_temperatura
+liga o ar condicionado,ar_condicionado_ligar
+desliga a tv,tv_desligar
+aumenta a temperatura do ar,ar_condicionado_temperatura
+deixa a luz com 100% de intensidade,luz_intensidade
+liga a luz do escritório,luz_ligar
+deixa o ar da sala em 20°C,ar_condicionado_temperatura
+coloca a luz do quarto em 50%,luz_intensidade
+aumenta a temperatura do ar da sala,ar_condicionado_temperatura
+apague o ar do escritório,ar_condicionado_desligar
+coloca a luz do quarto em 25%,luz_intensidade
+apaga a luz do quarto,luz_desligar
+ajusta o ar da sala para 26,ar_condicionado_temperatura
+coloca a luz em 50%,luz_intensidade
+pode ligar o ar do escritório,ar_condicionado_ligar
+brilho da lâmpada do quarto em 75,luz_intensidade
+temperatura do ar do quarto para 24,ar_condicionado_temperatura
+ajusta o brilho da luz para 50,luz_intensidade
+deixa a luz da sala com 25% de intensidade,luz_intensidade
+diminui a temperatura do ar do escritório,ar_condicionado_temperatura
+põe o ar condicionado em 28 graus,ar_condicionado_temperatura
+ligue o ar do quarto,ar_condicionado_ligar
+aumenta a temperatura do ar do escritório,ar_condicionado_temperatura
+aqueça o chuveiro,desconhecido
+coloca a luz da sala em 100%,luz_intensidade
+ajusta o brilho da luz para 10,luz_intensidade
+que horas são,desconhecido
+liga a lâmpada,luz_ligar
+pode desligar a luz do quarto,luz_desligar
+coloca o ar do escritório em 26 graus,ar_condicionado_temperatura
+ligue a luz do escritório,luz_ligar
+aumenta a luz do quarto para 100%,luz_intensidade
+aumenta a luz do escritório para 10%,luz_intensidade
+quero o ar do escritório a 20 graus,ar_condicionado_temperatura
+quero o ar da sala a 27 graus,ar_condicionado_temperatura
+põe o ar condicionado do escritório em 19 graus,ar_condicionado_temperatura
+diminui a temperatura do ar da sala,ar_condicionado_temperatura
+aumenta a luz para 50%,luz_intensidade
+temperatura do ar da sala para 20,ar_condicionado_temperatura
+quero a luz apagada,luz_desligar
+apague a tv,tv_desligar
+põe o ar condicionado em 22 graus,ar_condicionado_temperatura
+intensidade da luz da sala 25%,luz_intensidade
+pode ligar o ar da sala,ar_condicionado_ligar
+põe a luz da sala em 75 por cento,luz_intensidade
+liga a lâmpada da sala,luz_ligar
+liga a tv,tv_ligar
+quero a luz acesa,luz_ligar
+apague a tv da sala,tv_desligar
+quero o ar do quarto a 18 graus,ar_condicionado_temperatura
+ligue o som,desconhecido
+ligue o ar do escritório,ar_condicionado_ligar
+põe a luz da sala em 10 por cento,luz_intensidade
+liga a televisão do quarto,tv_ligar
+ative o ar condicionado,ar_condicionado_ligar
+abra a porta,desconhecido
+deixa o ar do escritório em 22°C,ar_condicionado_temperatura
+desliga a tv do quarto,tv_desligar
+coloca o ar do quarto em 22 graus,ar_condicionado_temperatura
+pode ligar o ar,ar_condicionado_ligar
+deixa o ar em 21°C,ar_condicionado_temperatura
+liga a lâmpada do escritório,luz_ligar
+muda o ar para 25,ar_condicionado_temperatura
+coloca a luz do quarto em 100%,luz_intensidade
+desliga o ar,ar_condicionado_desligar
+liga a lâmpada do quarto,luz_ligar
+ajusta o ar do quarto para 20,ar_condicionado_temperatura
+diminui a luz da sala para 75%,luz_intensidade
+deixa o ar do quarto em 19°C,ar_condicionado_temperatura
+brilho da lâmpada em 10,luz_intensidade
+pode ligar a luz do escritório,luz_ligar
+desliga a luz,luz_desligar
+liga a televisão,tv_ligar
+desligue a tv da sala,tv_desligar
+pode ligar a tv do quarto,tv_ligar
+coloca o ar do quarto em 21 graus,ar_condicionado_temperatura
+ligue a tv da sala,tv_ligar
+põe o ar condicionado em 19 graus,ar_condicionado_temperatura
+ative a tv da sala,tv_ligar
+desligue a lâmpada do escritório,luz_desligar
+aumenta a luz da sala para 100%,luz_intensidade
+põe a luz do escritório em 100 por cento,luz_intensidade
+ligue a luz do quarto,luz_ligar
+coloca o ar da sala em 27 graus,ar_condicionado_temperatura
+desligue o ar condicionado da sala,ar_condicionado_desligar
+acende a luz do quarto,luz_ligar
+quero ver tv,tv_ligar
+diminui a luz da sala para 50%,luz_intensidade
+coloca a luz do escritório em 10%,luz_intensidade
+deixa o ar do quarto em 18°C,ar_condicionado_temperatura
+pode desligar o ar,ar_condicionado_desligar
+desligue a tv do quarto,tv_desligar
+desliga a televisão do quarto,tv_desligar
+desligue o ar condicionado do quarto,ar_condicionado_desligar
+apague a tv do quarto,tv_desligar
+deixa a luz com 10% de intensidade,luz_intensidade
+"por favor, apague a luz da sala",luz_desligar
+muda o ar para 21,ar_condicionado_temperatura
+deixa a luz do quarto com 100% de intensidade,luz_intensidade
+põe a luz do quarto em 25 por cento,luz_intensidade
+ajusta o ar do quarto para 27,ar_condicionado_temperatura
+deixa a luz do quarto com 25% de intensidade,luz_intensidade
+apague a tv do escritório,tv_desligar
+"por favor, apague a luz",luz_desligar
+ligue a lâmpada do escritório,luz_ligar
+desliga a luz da sala,luz_desligar
+põe a luz do escritório em 25 por cento,luz_intensidade
+brilho da lâmpada da sala em 25,luz_intensidade
+pode desligar a luz do escritório,luz_desligar
+quero o ar do quarto a 26 graus,ar_condicionado_temperatura
+preciso de ar,ar_condicionado_ligar
+deixa o ar do quarto em 22°C,ar_condicionado_temperatura
+ative o ar condicionado do quarto,ar_condicionado_ligar
+brilho da lâmpada do quarto em 25,luz_intensidade
+põe a luz do escritório em 75 por cento,luz_intensidade
+liga o ar,ar_condicionado_ligar
+ajusta o brilho da luz da sala para 50,luz_intensidade
+põe o ar condicionado da sala em 25 graus,ar_condicionado_temperatura
+quero o ar da sala a 30 graus,ar_condicionado_temperatura
+põe o ar condicionado da sala em 26 graus,ar_condicionado_temperatura
+muda o ar da sala para 28,ar_condicionado_temperatura
+ajusta o ar da sala para 17,ar_condicionado_temperatura
+desliga a tv da sala,tv_desligar
+oi tudo bem,desconhecido
+desliga a televisão,tv_desligar
+desative o ar condicionado da sala,ar_condicionado_desligar
+intensidade da luz 75%,luz_intensidade
+desliga a luz do quarto,luz_desligar
+acende a luz do escritório,luz_ligar
+desligue o ar do quarto,ar_condicionado_desligar
+pode desligar a tv do quarto,tv_desligar
+aumenta a luz da sala para 25%,luz_intensidade
+desligue a tv,tv_desligar
+deixa o ar do escritório em 26°C,ar_condicionado_temperatura
+preciso de ar do quarto,ar_condicionado_ligar
+aumenta a luz do escritório para 25%,luz_intensidade
+muda o ar do escritório para 28,ar_condicionado_temperatura
+ligue o ventilador,desconhecido
+coloca o ar em 27 graus,ar_condicionado_temperatura
+muda o ar da sala para 29,ar_condicionado_temperatura
+pode ligar a tv da sala,tv_ligar
+apague o ar do quarto,ar_condicionado_desligar
+pode desligar o ar da sala,ar_condicionado_desligar
+ligue a tv do escritório,tv_ligar
+pode desligar o ar do escritório,ar_condicionado_desligar
+liga a luz do quarto,luz_ligar
+aumenta a luz do quarto para 10%,luz_intensidade
+chega de tv do escritório,tv_desligar
+desliga o ar condicionado do escritório,ar_condicionado_desligar
+pode desligar o ar do quarto,ar_condicionado_desligar
+brilho da lâmpada da sala em 10,luz_intensidade
+ajusta o ar do escritório para 24,ar_condicionado_temperatura
+ligue o ar da sala,ar_condicionado_ligar
+quero o ar a 24 graus,ar_condicionado_temperatura
+brilho da lâmpada do escritório em 25,luz_intensidade
+coloca a luz em 100%,luz_intensidade
+temperatura do ar para 30,ar_condicionado_temperatura
+pode ligar a luz da sala,luz_ligar
+ajusta o brilho da luz para 75,luz_intensidade
+temperatura do ar do escritório para 16,ar_condicionado_temperatura
+diminui a luz do escritório para 10%,luz_intensidade
+temperatura do ar da sala para 25,ar_condicionado_temperatura
+desliga o ar do escritório,ar_condicionado_desligar
+intensidade da luz do quarto 10%,luz_intensidade
+desliga a televisão da sala,tv_desligar
+diminui a temperatura do ar,ar_condicionado_temperatura
+apaga a luz,luz_desligar
+muda o ar do escritório para 19,ar_condicionado_temperatura
+pode desligar a luz da sala,luz_desligar
+temperatura do ar do quarto para 22,ar_condicionado_temperatura
+ajusta o brilho da luz da sala para 10,luz_intensidade
+desliga a televisão do escritório,tv_desligar
+"por favor, apague a luz do quarto",luz_desligar
+ligue a televisão,tv_ligar
+acenda a luz,luz_ligar
+"por favor, acenda a luz do escritório",luz_ligar
+pode ligar a luz,luz_ligar
+quero ver tv do escritório,tv_ligar
+põe a luz do quarto em 10 por cento,luz_intensidade
+desligue o ar do escritório,ar_condicionado_desligar
+liga a tv do escritório,tv_ligar
+ative o ar condicionado da sala,ar_condicionado_ligar
+pode ligar o ar do quarto,ar_condicionado_ligar
+intensidade da luz da sala 75%,luz_intensidade
+desliga o ar condicionado,ar_condicionado_desligar
+apague a luz do escritório,luz_desligar
+ajusta o ar para 25,ar_condicionado_temperatura
+deixa a luz da sala com 75% de intensidade,luz_intensidade
+diminui a temperatura do ar do quarto,ar_condicionado_temperatura
+desliga a tv do escritório,tv_desligar
+liga o ar da sala,ar_condicionado_ligar
+brilho da lâmpada do quarto em 50,luz_intensidade
+desligue a luz da sala,luz_desligar
+ajusta o brilho da luz do escritório para 100,luz_intensidade
+deixa o ar em 22°C,ar_condicionado_temperatura
+liga o ar do escritório,ar_condicionado_ligar
+intensidade da luz do escritório 75%,luz_intensidade
+quero a luz do quarto acesa,luz_ligar
+desligue o som,desconhecido
+põe a luz da sala em 50 por cento,luz_intensidade
+desligue o ar condicionado do escritório,ar_condicionado_desligar
+temperatura do ar do escritório para 20,ar_condicionado_temperatura
+ligue a luz,luz_ligar
+liga a luz,luz_ligar
+muda o ar para 26,ar_condicionado_temperatura
+deixa a luz do escritório com 75% de intensidade,luz_intensidade
+preciso de ar do escritório,ar_condicionado_ligar
+põe o ar condicionado do escritório em 26 graus,ar_condicionado_temperatura
+liga o ar condicionado do quarto,ar_condicionado_ligar
+ative a tv,tv_ligar
+deixa a luz do quarto com 50% de intensidade,luz_intensidade
+ligue o ar condicionado,ar_condicionado_ligar
+quero a luz da sala apagada,luz_desligar
+apaga a luz do escritório,luz_desligar
+"por favor, acenda a luz",luz_ligar
+chega de tv da sala,tv_desligar
+quero o ar do escritório a 24 graus,ar_condicionado_temperatura
+quero a luz do escritório acesa,luz_ligar
+deixa o ar da sala em 27°C,ar_condicionado_temperatura
+ative o ar condicionado do escritório,ar_condicionado_ligar
+coloca o ar em 26 graus,ar_condicionado_temperatura
+ligue a televisão do escritório,tv_ligar
+põe o ar condicionado do quarto em 23 graus,ar_condicionado_temperatura
+põe a luz em 10 por cento,luz_intensidade
+quero a luz do quarto apagada,luz_desligar
+intensidade da luz do escritório 50%,luz_intensidade
+intensidade da luz 100%,luz_intensidade
+acende a luz,luz_ligar
+pode desligar a luz,luz_desligar
+acenda a luz do quarto,luz_ligar
+liga a televisão da sala,tv_ligar
+desligue a luz,luz_desligar
+muda o ar do quarto para 20,ar_condicionado_temperatura
+bom dia,desconhecido
+ligue o ar condicionado da sala,ar_condicionado_ligar
+ajusta o ar do escritório para 20,ar_condicionado_temperatura
+quero o ar a 23 graus,ar_condicionado_temperatura
+desligue o ar da sala,ar_condicionado_desligar
+ligue o ar,ar_condicionado_ligar
+liga o ar condicionado da sala,ar_condicionado_ligar
+muda o ar do quarto para 19,ar_condicionado_temperatura
+apague o ar,ar_condicionado_desligar
+pedir uma pizza,desconhecido
+qual a previsão do tempo,desconhecido
+coloca o ar do escritório em 30 graus,ar_condicionado_temperatura
+chega de tv do quarto,tv_desligar
+ligue a televisão do quarto,tv_ligar
+desligue a luz do escritório,luz_desligar
+ligue o ar condicionado do quarto,ar_condicionado_ligar
+desligue a televisão do escritório,tv_desligar
+coloca o ar em 24 graus,ar_condicionado_temperatura
+diminui a luz do quarto para 75%,luz_intensidade
+desliga a lâmpada da sala,luz_desligar
+liga a luz da sala,luz_ligar
+apague a luz da sala,luz_desligar
+coloca a luz do escritório em 100%,luz_intensidade
+liga o ar do quarto,ar_condicionado_ligar
+"por favor, acenda a luz do quarto",luz_ligar
+coloca o ar da sala em 26 graus,ar_condicionado_temperatura
+deixa a luz com 75% de intensidade,luz_intensidade
+desliga a lâmpada,luz_desligar
+coloca o ar do quarto em 19 graus,ar_condicionado_temperatura
+desliga o ar condicionado do quarto,ar_condicionado_desligar
+acenda a luz da sala,luz_ligar
+quero o ar da sala a 28 graus,ar_condicionado_temperatura
+ajusta o brilho da luz do quarto para 10,luz_intensidade
+ajusta o ar da sala para 29,ar_condicionado_temperatura
+pode ligar a tv do escritório,tv_ligar
+toque uma música,desconhecido
+intensidade da luz do quarto 75%,luz_intensidade
+põe o ar condicionado do quarto em 21 graus,ar_condicionado_temperatura
+me ajuda,desconhecido
+quero o ar do quarto a 17 graus,ar_condicionado_temperatura
+desligue o ar condicionado,ar_condicionado_desligar
+desliga a lâmpada do quarto,luz_desligar
+apague a luz do quarto,luz_desligar
+ative a tv do escritório,tv_ligar
+desligue a televisão do quarto,tv_desligar
+abra a cortina,desconhecido
+desligue a televisão,tv_desligar
+quero ver tv do quarto,tv_ligar
+desligue a lâmpada do quarto,luz_desligar
+apague a luz,luz_desligar
+desligue o ar,ar_condicionado_desligar
+apague o ar da sala,ar_condicionado_desligar
+ligue a lâmpada da sala,luz_ligar
+quero o ar a 28 graus,ar_condicionado_temperatura
+ligue a televisão da sala,tv_ligar
+ajusta o ar do quarto para 30,ar_condicionado_temperatura
+pode desligar a tv,tv_desligar
+temperatura do ar para 18,ar_condicionado_temperatura
+boa noite,desconhecido
+desative o ar condicionado do quarto,ar_condicionado_desligar
+põe o ar condicionado do escritório em 23 graus,ar_condicionado_temperatura
+liga a tv do quarto,tv_ligar
+intensidade da luz 25%,luz_intensidade
+ligue a tv,tv_ligar
+deixa a luz do escritório com 100% de intensidade,luz_intensidade
+ajusta o brilho da luz do quarto para 25,luz_intensidade
+muda o ar do quarto para 26,ar_condicionado_temperatura
+liga o ar condicionado do escritório,ar_condicionado_ligar
+brilho da lâmpada da sala em 100,luz_intensidade
+ligue a cafeteira,desconhecido
+ligue a lâmpada,luz_ligar
+desligue a televisão da sala,tv_desligar
+"por favor, apague a luz do escritório",luz_desligar
+diminui a luz do quarto para 100%,luz_intensidade
+ajusta o ar para 21,ar_condicionado_temperatura
+quem é você,desconhecido
+diminui a luz para 100%,luz_intensidade
