@@ -7,3 +7,7 @@ dist/
 *.log
 backend/data/*.tmp
 backend/data/devices-test.json
+
+# chatbot
+__pycache__/
+.pytest_cache/
